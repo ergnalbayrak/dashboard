@@ -1,0 +1,161 @@
+.aside {
+    grid-area: aside;
+    background: #0f7490;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    align-items: baseline;
+    color: #ebf2f8;
+    font-size: 20px;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.aside>i {
+    padding-right: 1rem;
+}
+
+/** .aside {
+    grid-area: aside;
+    background: #0f7490;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    align-items: baseline;
+    color: #ebf2f8;
+
+}
+
+.aside a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.aside a:hover {
+    color: #f1f1f1;
+}
+
+**/
+.aside>div {
+    padding: 1rem;
+
+}
+
+.space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.border {
+    border-bottom: 1px solid gray;
+    margin: 0.5rem 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center>button {
+    border-radius: 5px;
+    width:100px;
+    height: 35px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+    height: 77%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between
+}
+
+.page {
+    padding: 1.5rem;
+    overflow-y: scroll;
+}
+.search-bar {
+    border: 0;
+    padding: 0 1rem;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #0c6883;
+    width: 90%;
+
+}
+
+.border-top {
+    border-bottom: 4px solid #dfdfe1;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.page {
+    grid-area: page;
+    background: #f3f4f6;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'aside aside header header header header header header header header header header'
+        'aside aside page page page page page page page page page page';
+    gap: 0;
+    width: 100%;
+
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+}
+
+.overview>div {
+    height: 130px;
+    width: 33%;
+    background: white;
+    border-radius: 1rem;
+    border: 3px solid #eceeed;
+    margin: 1rem;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
