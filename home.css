@@ -6,9 +6,8 @@
     flex-direction: column;
     align-items: baseline;
     color: #ebf2f8;
-    font-size: 20px;
     width: 100%;
-    padding-top: 1rem;
+    height: 100%;
 }
 
 .aside>i {
@@ -34,66 +33,107 @@
     display: block;
 }
 
-.aside a:hover {
-    color: #f1f1f1;
+**/
+.aside>div a:hover {
+    color: gray;
+    background-color: gray;
+
 }
 
-**/
-.aside>div {
-    padding: 1rem;
+a:hover {
+    color: gray
+}
 
+.aside>div {
+    padding: 0.65rem 1rem;
+
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.top {
+    background-color: #f3f4f6;
 }
 
 .space-between {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    align-items: center;
+
+}
+
+.color-w {
+    background-color: white;
 }
 
 .border {
     border-bottom: 1px solid gray;
-    margin: 0.5rem 1rem;
+    margin: 1rem 0;
 }
 
 .column {
     display: flex;
     flex-direction: column;
 }
+
+.w100 {
+    width: 100%;
+}
+
 .center {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .center>button {
     border-radius: 5px;
-    width:100px;
+    width: 115px;
     height: 35px;
+
+}
+
+.add {
+    background-color: rgb(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0, 0.9);
+    border: 1px solid gray;
+}
+
+.send {
+    background: rgb(15, 116, 144, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid white;
 }
 
 .row {
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 .header {
     grid-area: header;
     background-color: white;
-    height: 77%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem 2rem 0 2rem;
     justify-content: space-between
 }
 
 .page {
-    padding: 1.5rem;
-    overflow-y: scroll;
+    padding: 0 2rem;
+
 }
+
 .search-bar {
     border: 0;
     padding: 0 1rem;
+    width: 100%;
+    outline: none;
 }
 
 .border-bottom {
@@ -115,8 +155,13 @@
 .page {
     grid-area: page;
     background: #f3f4f6;
+    padding: 0;
+    height: 100%;
 }
 
+.p1 {
+    padding: 0 2rem;
+}
 
 .grid-container {
     display: grid;
@@ -130,32 +175,104 @@
 
 .overview {
     display: flex;
-    flex-direction: row;
-    max-width: 100%;
-
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
 }
 
-.overview>div {
-    height: 130px;
-    width: 33%;
+.top {
+    border: 2px solid #f9fafc;
+    color: black;
+}
+
+.box {
     background: white;
-    border-radius: 1rem;
-    border: 3px solid #eceeed;
-    margin: 1rem;
+    border-radius: 10px;
+    width: 30%;
+    height: 100%;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 33%;
+
 }
 
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
+    border-radius: 5px;
+    color: gray;
+    font-size: 14px;
+}
+
+td {
+    border-bottom: 2px solid #f3f4f6;
     padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+}
+
+th {
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.fit-success {
+    background: #d7f9e1;
+    color: White:;
+    width: fit-content;
+    border-radius: 12px;
+}
+
+.success {
+    color: #3f7a59;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.fit-processing {
+    background: #fff8c4;
+    color: #835d25;
+    width: fit-content;
+    border-radius: 12px;
+}
+
+.processing {
+    color: #835d25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.fit-failed {
+    background: #f3f4f6;
+    color: #373b42;
+    width: fit-content;
+    border-radius: 12px;
+}
+
+.failed {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bold-black {
+    font-weight: bold;
+    color: black;
+}

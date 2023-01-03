@@ -17,168 +17,298 @@
 width:100%;
 height:100vh;
 background-color: #ffffff;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 top:0;
 margin: 0;
 bottom: 0;">
 
-    <div class="grid-container height">
+    <div class="grid-container" style="height:100%">
         <div class="aside">
-            <img src="logo.png">
+            <img src="logo.png" style="padding:1rem;">
             <div>
-                <i class="fa fa-home" aria-hidden="true"></i>
-                Home
+                <a href="#" class="opacity" style="text-decoration:none; color:white;">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Home
+                </a>
+
             </div>
             <div>
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <a href="#" class="opacity" style="text-decoration:none; color:white;">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
 
-                History
+                    History
+                </a>
             </div>
             <div>
-                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                <a href="#" class="opacity" style="text-decoration:none; color:white;">
+                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
 
-                Balances
+                    Balances
+                </a>
             </div>
             <div>
-                <i class="fa fa-credit-card" aria-hidden="true"></i>
+                <a href="#" class="opacity" style="text-decoration:none; color:white;">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
 
-                Cards
+                    Cards
+                </a>
             </div>
             <div>
-                <i class="fa fa-users" aria-hidden="true"></i>
+                <a href="#" class="opacity" style="text-decoration:none; color:white;">
+                    <i class="fa fa-users" aria-hidden="true"></i>
 
-                Recipients
+                    Recipients
+                </a>
             </div>
             <div>
-                <i class="fa fa-file-o" aria-hidden="true"></i>
+                <a href="#" class="opacity" style="text-decoration:none; color:white;">
+                    <i class="fa fa-file-o" aria-hidden="true"></i>
 
-                Reports
+                    Reports
+                </a>
             </div>
             <div class="border-bottom"></div>
             <div style="padding-top:3rem;">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                Settings
+                <a href="#" class="opacity" style="text-decoration:none; color:white;">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    Settings
+                </a>
             </div>
             <div>
-                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                <a href="#" class="opacity" style="text-decoration:none; color:white;">
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
 
-                Help
+                    Help
+                </a>
             </div>
             <div>
-                <i class="fa fa-shield" aria-hidden="true"></i>
+                <a href="#" class="opacity" style="text-decoration:none; color:white;">
+                    <i class="fa fa-shield" aria-hidden="true"></i>
 
-                Privacy
+                    Privacy
+                </a>
             </div>
         </div>
 
         <header class="header">
             <div>
                 <div class="space-between">
-                    <div>
+                    <div class="w100 flex">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" class="search-bar" placeholder="Search transactions">
-    
+
                     </div>
-                    <div class="row space-between">
-                        <i class="fa-light fa-bell"></i>
+                    <div class="row space-between" style="width: 37%; justify-content:center;">
+                        <i class="fa-solid fa-envelope" style="padding:0 1.5rem;"></i>
                         <img src="./IMG_1427.JPG" style="width:30px; height:30px; border-radius: 2rem;" alt="">
-                        <div style="color:#5c5f6">Ergün Albayrak</div>
+                        <div style="color:#5c5f6d; padding:0 0.8rem;">Ergün Albayrak</div>
                     </div>
-    
+
                 </div>
                 <div class="border"></div>
                 <div class=" flex ">
-    
+
                     <img src="./IMG_1427.JPG" style="width:60px; height:60px; border-radius: 2rem;" alt="">
                     <div class="space-between" style="width:100%">
-                        <div class="column space-between">
+                        <div class="column space-between" style="align-items: baseline;
+                        padding-left: 1rem;
+                        height: 100%;
+                        justify-content: space-around;">
                             <div>
-                                Good morning, Emilia Birch
+                                Good morning, Ergün Albayrak
                             </div>
-                            <div class="row space-between" style="width: 400px;">
+                            <div class="row space-between" style="width: 300px; opacity:0.5;">
+                                <i class="fa-solid fa-building"></i>
                                 <div>
                                     Duke Street Studio
                                 </div>
+                                <i class="fa-solid fa-building"></i>
                                 <div>
                                     Verified Account
                                 </div>
                             </div>
                         </div>
-                        <div class="center" style="width: 20%;">
-                            <button type="button">Add money</button>
-                            <button type="button">Send money</button>
+                        <div class="center" style="width: 28%; padding:0 1rem;">
+                            <button class="add" type="button">Add money</button>
+                            <button class="send" type="button">Send money</button>
                         </div>
                     </div>
-            </div>
-            
+                </div>
+
         </header>
 
         <section class="page">
             <div class="border-top"></div>
-            <div class="">
-                <h2>Overview</h2>
+            <div class="p1">
+                <h2 style="margin: 0; padding: 2rem 0 0.5rem 0;">Overview</h2>
                 <div class="overview">
-                    <div>
-                        <div>Account balance</div>
-                        <div>$30,659.45</div>
-                        <a href="#">View all</a>
+                    <div class="box">
+                        <div style="
+                            padding: 1rem;
+                            display: flex;
+                            flex-direction: inherit;
+                            align-items: center;">
+                            <div class="icon">
+                                <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <p style="
+                                margin: 0;
+                                padding: 0.25rem;
+                                padding-bottom: 0;">
+                                    Account balance
+                                </p>
+                                <p style="
+                                margin: 0;
+                                padding: 0.25rem;">
+                                    $30,659,45
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            style="display: flex; background: #eee; padding: 1rem; border-end-end-radius: 10px; height: 25px; border-end-start-radius: 10px;">
+                            <a href="#" style="text-decoration:none; ">View all</a>
+                        </div>
                     </div>
-                    <div>
-                        <div>Pending</div>
-                        <div>-$19,500.00</div>
-                        <a href="#">View all</a>
+                    <div class="box">
+                        <div class="icon"> <i class="fa fa-balance-scale" aria-hidden="true"></i> </div>
+                        <div>
+                            <p>Pending</p>
+                            <p>-$19,500.00</p>
+                        </div>
+                        <div
+                            style=" display: flex; background: #eee; padding: 1rem; border-end-end-radius: 10px; height: 25px; border-end-start-radius: 10px;">
+                            <a href="#" style="text-decoration:none;">View all</a>
+                        </div>
                     </div>
-                    <div>
-                        <div>Processed (last 30 days)</div>
-                        <div>$20,000</div>
-                        <a href="#">View all</a>
+                    <div class="box">
+                        <div class="icon"> <i class=" fa fa-balance-scale" aria-hidden="true"></i> </div>
+                        <div>
+                            <p>Processed (last 30 days)</p>
+                            <p>$20,000.00</p>
+                        </div>
+                        <div
+                            style=" display: flex; background: #eee; padding: 1rem; border-end-end-radius: 10px; height: 25px; border-end-start-radius: 10px;">
+                            <a href="#" style="text-decoration:none; color:#0f7490">View all</a>
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div class="activity">
+
+            <div class="activity p1">
                 <h2>Recent activity</h2>
                 <table>
-                    <tr>
-                        <th>Transaction</th>
-                        <th>Amount</th>
-                        <th>Status</th>
-                        <th>Date</th>
+                    <tr class="top">
+                        <th style="width:55%">Transaction</th>
+                        <th style="width:15%">Amount</th>
+                        <th style="width:15%">Status</th>
+                        <th style="width:15%">Date</th>
                     </tr>
-                    <tr>
-                        <td>Payment to Molly Sanders</td>
-                        <td>$20,000 USD</td>
-                        <td>Success</td>
+                    <tr class="color-w">
+                        <td>
+                            <i class="fa-solid fa-money-bills"></i>
+                            Payment to Molly Sanders
+                        </td>
+                        <td class="row">
+                            <p class="bold-black">$20,000</p> &nbsp;
+                            <p>USD</p>
+                        </td>
+                        <td>
+                            <div class="fit-success">
+                                <span class="success">
+                                    Success
+                                </span>
+                            </div>
+                        </td>
                         <td>July 11, 2020</td>
                     </tr>
-                    <tr>
-                        <td>Payment to Doug Mann</td>
-                        <td>$19,500 USD</td>
-                        <td>Processing</td>
+                    <tr class="color-w">
+                        <td>
+                            <i class="fa-solid fa-money-bills"></i>
+                            Payment to Doug Mann
+                        </td>
+                        <td class="row">
+                            <p class="bold-black">$19,500</p> &nbsp;
+                            <p>USD</p>
+                        </td>
+                        <td>
+                            <div class="fit-processing">
+                                <span class="processing">
+                                    Processing
+                                </span>
+                            </div>
+                        </td>
                         <td>July 5, 2020</td>
                     </tr>
-                    <tr>
-                        <td>Payment to Erica Frost</td>
-                        <td>$8,750 USD</td>
-                        <td>Success</td>
+                    <tr class="color-w">
+                        <td>
+                            <i class="fa-solid fa-money-bills"></i>
+                            Payment to Erica Frost
+                        </td>
+                        <td class="row">
+                            <p class="bold-black">$8,750</p> &nbsp;
+                            <p>USD</p>
+                        </td>
+                        <td>
+                            <div class="fit-success">
+                                <span class="success">
+                                    Success
+                                </span>
+                            </div>
+                        </td>
                         <td>July 4, 2020</td>
                     </tr>
-                    <tr>
-                        <td>Payment to Miley Davis</td>
-                        <td>$300 USD</td>
-                        <td>Success</td>
+                    <tr class="color-w">
+                        <td>
+                            <i class="fa-solid fa-money-bills"></i>
+                            Payment to Miley Davis
+                        </td>
+                        <td class="row">
+                            <p class="bold-black">$300</p> &nbsp;
+                            <p>USD</p>
+                        </td>
+                        <td>
+                            <div class="fit-success">
+                                <span class="success">
+                                    Success
+                                </span>
+                            </div>
+                        </td>
                         <td>July 1, 2020</td>
                     </tr>
-                    <tr>
-                        <td>Payment to Molly Sanders</td>
-                        <td>$20,000 USD</td>
-                        <td>Failed</td>
+                    <tr class="color-w">
+                        <td>
+                            <i class="fa-solid fa-money-bills"></i>
+                            Payment to Molly Sanders
+                        </td>
+                        <td class="row">
+                            <p class="bold-black">$20,000</p> &nbsp;
+                            <p>USD</p>
+                        </td>
+                        <td>
+                            <div class="fit-failed">
+                                <span class="failed">
+                                    Failed
+                                </span>
+                            </div>
+                        </td>
                         <td>June 17, 2020</td>
                     </tr>
-                    <tr>
-                        <td>Payment to Doug Mann</td>
-                        <td>$19,500 USD</td>
-                        <td>Processing</td>
+                    <tr class="color-w">
+                        <td>
+                            <i class="fa-solid fa-money-bills"></i>
+                            Payment to Doug Mann
+                        </td>
+                        <td class="row">
+                            <p class="bold-black">$19,500</p> &nbsp;
+                            <p>USD</p>
+                        </td>
+                        <td>
+                            <div class="fit-processing">
+                                <span class="processing">
+                                    Processing
+                                </span>
+                            </div>
+                        </td>
                         <td>June 14, 2020</td>
                     </tr>
                 </table>
