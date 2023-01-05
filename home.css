@@ -34,21 +34,20 @@
 }
 
 **/
-.aside>div a:hover {
+.aside> div:hover {
     color: gray;
     background-color: gray;
 
 }
 
-a:hover {
-    color: gray
-}
-
 .aside>div {
+    width: 100%;
     padding: 0.65rem 1rem;
-
 }
 
+i {
+    padding-right: 1rem;
+}
 .opacity {
     opacity: 0.8;
 }
@@ -86,7 +85,7 @@ a:hover {
 .center {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .center>button {
@@ -112,6 +111,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     padding: 0;
+    justify-content: center;
 }
 
 .header {

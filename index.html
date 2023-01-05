@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" type="text/css" href="./global.css">
     <link rel="stylesheet" type="text/css" href="./home.css">
-    <script src="fontawesome.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/21f5bf08f7.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -98,7 +99,7 @@ bottom: 0;">
 
                     </div>
                     <div class="row space-between" style="width: 37%; justify-content:center;">
-                        <i class="fa-solid fa-envelope" style="padding:0 1.5rem;"></i>
+                        <i class="fa-solid fa-bell" style="padding:0 1.5rem;"></i>
                         <img src="./IMG_1427.JPG" style="width:30px; height:30px; border-radius: 2rem;" alt="">
                         <div style="color:#5c5f6d; padding:0 0.8rem;">Ergün Albayrak</div>
                     </div>
@@ -113,21 +114,23 @@ bottom: 0;">
                         padding-left: 1rem;
                         height: 100%;
                         justify-content: space-around;">
-                            <div>
+                            <div style="
+                            font-weight: bold;
+                            font-size: 20px;">
                                 Good morning, Ergün Albayrak
                             </div>
-                            <div class="row space-between" style="width: 300px; opacity:0.5;">
+                            <div class="row space-between" style="width: 350px; opacity:0.5;">
                                 <i class="fa-solid fa-building"></i>
                                 <div>
                                     Duke Street Studio
                                 </div>
-                                <i class="fa-solid fa-building"></i>
+                                <i class="fa-solid fa-circle-check" style="padding-left:1rem; color:green;"></i>
                                 <div>
                                     Verified Account
                                 </div>
                             </div>
                         </div>
-                        <div class="center" style="width: 28%; padding:0 1rem;">
+                        <div class="center" style="width: 26    %; padding:0 1rem;">
                             <button class="add" type="button">Add money</button>
                             <button class="send" type="button">Send money</button>
                         </div>
@@ -178,7 +181,7 @@ bottom: 0;">
                         flex-direction: inherit;
                         align-items: center;">
                             <div class="icon">
-                                <i class="fa-solid fa-arrow-rotate-left" style="color:gray;"></i>
+                                <i class="fa-solid fa-recycle" style="color:gray;"></i>
                             </div>
                             <div>
                                 <p style="
@@ -207,8 +210,8 @@ bottom: 0;">
                         display: flex;
                         flex-direction: inherit;
                         align-items: center;">
-                            <div class="icon"> 
-                                <i class="fa-solid fa-circle-check" style="color:gray;"></i>
+                            <div class="icon">
+                                <i class="fa-regular fa-circle-check" style="color:gray;"></i>
                             </div>
                             <div>
                                 <p style="
@@ -241,10 +244,12 @@ bottom: 0;">
                 </h2>
                 <table>
                     <tr class="top">
-                        <th style="width:55%">Transaction</th>
+                        <th style="display: flex;
+                        width: 55%;
+                        align-items: baseline;">Transaction</th>
                         <th style="width:15%">Amount</th>
-                        <th style="width:15%">Status</th>
-                        <th style="width:15%">Date</th>
+                        <th style="width:15%; display:flex;">Status</th>
+                        <th style="width:10%">Date</th>
                     </tr>
                     <tr class="color-w">
                         <td>
