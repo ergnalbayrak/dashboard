@@ -1,1 +1,1 @@
-# responsive-dashboard
+# dashboard
